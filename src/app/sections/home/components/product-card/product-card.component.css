@@ -1,0 +1,115 @@
+.product-card {
+  /* cursor: pointer; */
+}
+.active:hover .product-redeem-card {
+  visibility: visible;
+  opacity: 1;
+}
+
+.category-title {
+  font-size: 1rem;
+  color: #a3a3a3;
+  letter-spacing: -0.04px;
+}
+.product-name {
+  font-size: 1.1rem;
+  letter-spacing: -0.04px;
+  font-weight: 600;
+}
+
+/* .product-redeem-card */
+
+.product-redeem-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+.product-redeem-card__background {
+  background-image: linear-gradient(-180deg, #0ad4fa 0%, #25bbf1 100%);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.product-redeem-card__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-cost,
+.user-points-needed {
+  display: flex;
+  font-size: 2.25rem;
+  color: white;
+  letter-spacing: -0.08px;
+  margin-bottom: 0.5rem;
+}
+.svg-coin {
+  display: flex;
+  align-self: center;
+  margin-top: 4px;
+  margin-left: 0.8rem;
+}
+
+/* .product-disable-card */
+.product-disable-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+.product-disable-card__background {
+  background-image: linear-gradient(
+    180deg,
+    rgba(105, 105, 105, 1) 0%,
+    rgba(182, 182, 182, 1) 100%
+  );
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.product-disable-card__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+.info-text {
+  font-size: 1.3rem;
+  color: white;
+  margin: 0;
+}
+.secondary-text {
+  font-size: 0.9rem;
+  color: #dcdde1;
+}
+.secondary-text a {
+  color: #ffda79;
+}
+.secondary-text a:hover {
+  text-decoration: underline;
+}

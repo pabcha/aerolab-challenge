@@ -1,0 +1,61 @@
+<app-banner></app-banner>
+
+<main class="fluid-container">
+  <header>
+    <app-paginator
+      [page]="page"
+      [total]="total"
+      (pageIndexChange)="onPageChange($event)"
+    >
+      <products-sortby
+        [default]="sortbyDefault"
+        (onSelect)="sortProducts($event)"
+      ></products-sortby>
+    </app-paginator>
+  </header>
+
+  <section class="products" *ngIf="error">
+    <nz-alert
+      nzType="error"
+      nzMessage="Ups! something went wrong. Please try again!"
+      nzShowIcon
+      [ngStyle]="{ marginBottom: '1rem' }"
+    ></nz-alert>
+    <products-skeleton></products-skeleton>
+  </section>
+
+  <section class="products" *ngIf="loading">
+    <products-skeleton></products-skeleton>
+  </section>
+
+  <section class="products" *ngIf="!loading && !error">
+    <nz-list nzGrid>
+      <div nz-row [nzGutter]="16">
+        <div
+          nz-col
+          [nzXl]="6"
+          [nzLg]="8"
+          [nzMd]="12"
+          [nzSm]="24"
+          [nzXs]="24"
+          *ngFor="let product of products"
+        >
+          <nz-list-item>
+            <app-product-card
+              [product]="product"
+              [userPoints]="userPoints"
+            ></app-product-card>
+          </nz-list-item>
+        </div>
+      </div>
+    </nz-list>
+  </section>
+
+  <footer style="padding-bottom: 1rem">
+    <app-paginator
+      [page]="page"
+      [total]="total"
+      (pageIndexChange)="onPageChange($event)"
+    ></app-paginator>
+  </footer>
+</main>

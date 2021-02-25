@@ -1,0 +1,27 @@
+<div class="profile container">
+  <div nz-row [nzGutter]="16">
+    <div nz-col [nzMd]="12" [nzXs]="24">
+      <profile-card-skeletons
+        *ngIf="loadingUser"
+        [aeType]="'profile-skeleton'"
+      ></profile-card-skeletons>
+      <profile-card *ngIf="!loadingUser" [me]="me"></profile-card>
+
+      <profile-card-skeletons
+        *ngIf="loadingRedeem"
+        [aeType]="'barchart-skeleton'"
+      ></profile-card-skeletons>
+      <barchart-card *ngIf="!loadingRedeem" [redeems]="redeems"></barchart-card>
+    </div>
+    <div nz-col [nzMd]="12" [nzXs]="24">
+      <profile-card-skeletons
+        *ngIf="loadingRedeem"
+        [aeType]="'redeems-skeleton'"
+      ></profile-card-skeletons>
+      <redeems-card
+        *ngIf="!loadingRedeem"
+        [redeems]="redeems.slice(0, 20)"
+      ></redeems-card>
+    </div>
+  </div>
+</div>

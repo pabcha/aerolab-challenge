@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  color: #616161;
+  background: #f9f9f9;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1176px;
+  margin: 0 auto;
+}
+.fluid-container {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+}

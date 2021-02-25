@@ -1,0 +1,16 @@
+<nz-card style="margin-bottom: 2rem">
+  <div nz-row [nzGutter]="8">
+    <div nz-col [nzSm]="7" [nzXs]="24">
+      <nz-avatar
+        [nzSize]="120"
+        nzIcon="user"
+        style="background-color: #0ad4fa"
+      ></nz-avatar>
+    </div>
+    <div nz-col [nzSm]="17" [nzXs]="24" *ngIf="me">
+      <h1>{{ me.name }}</h1>
+      <p>Member since: {{ me.createDate | date: "mediumDate" }}</p>
+      <p>Points: {{ me.points | number: "":"es-AR" }}</p>
+    </div>
+  </div>
+</nz-card>

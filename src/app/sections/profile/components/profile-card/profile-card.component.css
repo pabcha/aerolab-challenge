@@ -1,0 +1,11 @@
+h1,
+p {
+  margin: 0;
+}
+nz-card h1 {
+  font-size: 2rem;
+}
+nz-card p {
+  font-size: 1.3rem;
+  color: #616161;
+}

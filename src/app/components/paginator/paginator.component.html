@@ -1,0 +1,20 @@
+<div class="market__paginator-filters-section">
+  <div class="market__paginator-indicator">
+    {{ subtotal }} of {{ total }} products
+  </div>
+  <div class="market__controls-section">
+    <div class="additional-content">
+      <div>
+        <ng-content></ng-content>
+      </div>
+    </div>
+    <div class="market__paginator-actions">
+      <a *ngIf="!isFirstPage()" (click)="handlePageChange(-1)">
+        <svg-icon [size]="48" name="arrow-left"></svg-icon>
+      </a>
+      <a *ngIf="hasNextPage()" (click)="handlePageChange(1)">
+        <svg-icon [size]="48" name="arrow-right"></svg-icon>
+      </a>
+    </div>
+  </div>
+</div>

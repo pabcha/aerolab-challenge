@@ -1,0 +1,21 @@
+<nz-card>
+  <h3 class="card-title">Your last 20 redeems</h3>
+  <ul class="products" *ngIf="redeems && redeems.length > 0">
+    <li class="product-item" *ngFor="let redeem of redeems">
+      <div class="product-item__img-section">
+        <img [src]="redeem.img.url" [alt]="redeem.name" />
+      </div>
+      <div class="product-item__info-section">
+        <h4 nz-typography>
+          {{ redeem.name }}
+          <span nz-typography nzType="secondary">- {{ redeem.category }}</span>
+        </h4>
+        <span nz-typography>
+          <strong>Register date:</strong>
+          {{ redeem.createDate | date: "medium" }}
+        </span>
+        <h3 nz-typhography>{{ redeem.cost | number: "":"es-AR" }} coins</h3>
+      </div>
+    </li>
+  </ul>
+</nz-card>

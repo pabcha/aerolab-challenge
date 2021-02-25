@@ -1,0 +1,75 @@
+.app-header {
+  background-color: white;
+  min-height: 80px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%), 0 4px 12px 0 rgb(0 0 0 / 20%);
+}
+.app-hader__container {
+  width: 1440px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 2.625rem;
+}
+.app-header__logo-section {
+  display: flex;
+  align-items: center;
+}
+.app-header__logo {
+}
+.app-header__menu-section {
+  display: flex;
+}
+ul.app-header__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.app-header__menu li:first-child {
+  margin-right: 0.1rem;
+}
+ul.app-header__menu li {
+  margin-left: 1.5rem;
+  line-height: 48px;
+  cursor: pointer;
+  padding: 0 1rem;
+  border-radius: 100px;
+  transition: border 0.5 ease-in;
+  border: 2px solid white;
+}
+ul.app-header__menu li:hover {
+  border: 2px solid #eee;
+}
+
+ul.app-header__menu li.menu-item-coins {
+  background: #ededed;
+  display: flex;
+  border: 2px solid #ededed;
+  align-items: center;
+  transition: background 0.5 ease-in;
+}
+
+ul.app-header__menu li.menu-item-coins:hover {
+  background: #dfe6e9;
+}
+ul.app-header__menu li.menu-item-coins:active {
+  background: #bdc3c7;
+}
+
+a {
+  color: inherit;
+}
+
+@media (max-width: 1199px) {
+  .app-header {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,53 @@
+.sortby-section > * {
+  margin-right: 0.5rem;
+}
+
+span {
+  color: #a3a3a3;
+}
+
+:checked + span {
+  background-color: #0ad4fa;
+  color: white;
+}
+input[type="radio"]:focus + span {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 0.3rem rgba(88, 195, 214, 0.616);
+}
+
+label {
+  position: relative;
+}
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.radio-filter {
+  display: inline-block;
+  background-color: #ededed;
+  font-size: 22px;
+  color: #a3a3a3;
+  letter-spacing: -0.15px;
+  line-height: 48px;
+  border-radius: 100px;
+  padding: 0 1.5rem;
+  cursor: pointer;
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (min-width: 993px) AND (max-width: 1199px) {
+  .radio-filter {
+    font-size: 18px;
+    padding: 0 1rem;
+    line-height: 38px;
+  }
+  .sortby-label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

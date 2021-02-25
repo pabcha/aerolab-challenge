@@ -1,0 +1,29 @@
+<div class="profile-card-skeleton" *ngIf="aeType === 'barchart-skeleton'">
+  <nz-skeleton [nzParagraph]="{ rows: 6 }" [nzActive]="true"></nz-skeleton>
+</div>
+
+<div class="profile-card-skeleton" *ngIf="aeType === 'redeems-skeleton'">
+  <div class="card-skeleton">
+    <nz-skeleton-element nzType="image" [nzActive]="true"></nz-skeleton-element>
+    <nz-skeleton [nzActive]="true"></nz-skeleton>
+  </div>
+  <nz-divider></nz-divider>
+  <div class="card-skeleton">
+    <nz-skeleton-element nzType="image" [nzActive]="true"></nz-skeleton-element>
+    <nz-skeleton [nzActive]="true"></nz-skeleton>
+  </div>
+  <nz-divider></nz-divider>
+  <div class="card-skeleton">
+    <nz-skeleton-element nzType="image" [nzActive]="true"></nz-skeleton-element>
+    <nz-skeleton [nzActive]="true"></nz-skeleton>
+  </div>
+</div>
+
+<div class="profile-card-skeleton" *ngIf="aeType === 'profile-skeleton'">
+  <nz-skeleton
+    [nzActive]="true"
+    [nzLoading]="true"
+    [nzAvatar]="{ size: 'large' }"
+    [nzParagraph]="{ rows: 3 }"
+  ></nz-skeleton>
+</div>

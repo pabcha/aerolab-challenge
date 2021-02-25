@@ -1,0 +1,10 @@
+.profile {
+  padding-top: 120px;
+}
+
+.ant-row {
+  margin: 0px !important;
+}
+[nz-col] {
+  margin-bottom: 1rem;
+}

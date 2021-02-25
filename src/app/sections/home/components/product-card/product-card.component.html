@@ -1,0 +1,37 @@
+<nz-card
+  class="product-card"
+  [ngClass]="{ active: hasPointsEnough }"
+  [nzCover]="coverTemplate"
+>
+  <div class="category-title">{{ product.category }}</div>
+  <h3 class="product-name">{{ product.name }}</h3>
+  <div class="product-redeem-card">
+    <div class="product-redeem-card__background"></div>
+    <div class="product-redeem-card__info">
+      <h2 class="product-cost">
+        {{ product.cost | number: "":"es-AR" }}
+        <svg-icon class="svg-coin" [size]="34" name="coin"></svg-icon>
+      </h2>
+      <ui-button [uiLoading]="loading" (click)="onRedeem()"
+        >Redeem now</ui-button
+      >
+    </div>
+  </div>
+  <div class="product-disable-card" *ngIf="!hasPointsEnough">
+    <div class="product-disable-card__background"></div>
+    <div class="product-disable-card__info">
+      <p class="info-text">You're missing</p>
+      <h2 class="user-points-needed">
+        {{ product.cost - userPoints | number: "":"es-AR" }}
+        <svg-icon class="svg-coin" [size]="34" name="coin"></svg-icon>
+      </h2>
+      <p class="secondary-text" style="text-align: center">
+        This product costs {{ product.cost | number: "":"es-AR" }} points.<br />
+        <a (click)="openModal()">Add more points</a> to your account.
+      </p>
+    </div>
+  </div>
+</nz-card>
+<ng-template #coverTemplate>
+  <img [alt]="product.name" [src]="product.img.hdUrl" />
+</ng-template>

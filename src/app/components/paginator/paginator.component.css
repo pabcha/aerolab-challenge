@@ -1,0 +1,44 @@
+.market__paginator-filters-section {
+  display: flex;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.market__paginator-indicator {
+  padding-right: 1rem;
+  border-right: 1px solid #d9d9d9;
+  line-height: 48px;
+}
+
+.market__controls-section {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.additional-content {
+  padding: 0 1rem;
+}
+
+.market__paginator-actions {
+  display: flex;
+}
+.market__paginator-actions > * {
+  margin-left: 0.8rem;
+}
+
+@media (max-width: 992px) {
+  .additional-content > div {
+    display: none;
+  }
+  .market__paginator-indicator {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 993px) AND (max-width: 1199px) {
+  .market__paginator-indicator {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+}

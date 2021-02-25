@@ -1,0 +1,27 @@
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #616161;
+}
+
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 520px;
+  overflow-y: scroll;
+}
+.product-item {
+  display: flex;
+  border: 1px solid #ededed;
+  margin-bottom: 0.5rem;
+}
+.product-item__img-section {
+  max-width: 160px;
+  padding: 0.3rem;
+}
+.product-item__info-section {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}

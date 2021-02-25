@@ -1,0 +1,6 @@
+<button class="button-redeem" [disabled]="loading">
+  <ng-content *ngIf="!loading"></ng-content>
+  <ng-container *ngIf="loading">
+    <nz-spin nzSimple></nz-spin>
+  </ng-container>
+</button>

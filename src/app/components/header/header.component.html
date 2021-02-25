@@ -1,0 +1,36 @@
+<header class="app-header">
+  <div class="app-hader__container">
+    <div class="app-header__logo-section">
+      <div class="app-header__logo">
+        <a routerLink="/">
+          <svg-icon [size]="36" name="aerolab-logo"></svg-icon>
+        </a>
+      </div>
+    </div>
+    <nav class="app-header__menu-section">
+      <ul class="app-header__menu">
+        <li
+          nz-tooltip
+          nzTooltipPlacement="bottom"
+          nzTooltipTitle="View your profile"
+        >
+          <a routerLink="/profile">{{ me.name }}</a>
+        </li>
+        <nz-spin [nzSpinning]="loading">
+          <li
+            class="menu-item-coins"
+            (click)="openModal()"
+            nz-tooltip
+            nzTooltipPlacement="bottom"
+            nzTooltipTitle="Add more points"
+          >
+            <span [style.marginRight.px]="5">{{
+              me.points | number: "":"es-AR"
+            }}</span>
+            <svg-icon [size]="30" name="coin"></svg-icon>
+          </li>
+        </nz-spin>
+      </ul>
+    </nav>
+  </div>
+</header>
