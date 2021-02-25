@@ -1,27 +1,53 @@
-# AerolabChallenge
+# Aerolab challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+El desafío propuesto por Aerolab consiste en desarrollar una grilla de productos para un programa de recompensas. La meta principal de este desarrollo consiste en ayudar a los usuarios a canjear productos con los puntos acumulados en el sistema.
+Aerolab propone una Interfaz Gráfica inicial que esta sujeta a cualquier mejora que el retador considere necesario, y una [API](https://aerolabchallenge.docs.apiary.io/#) de la cual consumir datos desde una aplicación cliente.
 
-## Development server
+Mas información [aqui](https://aerolab.co/coding-challenge-instructions?utm_campaign=Coding%20Challenge).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Stack tecnológico
 
-## Code scaffolding
+- [Node 14.15.0][node]
+- [NPM 6.14.5][node]
+- [Angular 11.1][angular]
+- [Angular CLI][cli]
+- UI modules:
+  - [ng-zorro][ng-zorro] UI component: `tooltip`, `modal`, `select`, `icon` and more.
+  - [ngx-chartjs]
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[cli]: https://cli.angular.io/
+[angular]: https://angular.io/
+[ng-zorro]: https://ng.ant.design/docs/introduce/en
+[node]: https://nodejs.org/
+[ngx-chartjs]: https://github.com/scttcper/ngx-chartjs
 
-## Build
+## Funcionalidad (desafío)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+El usuario tiene una cantidad definida de puntos y cada producto vale una cantidad de puntos especifica.
 
-## Running unit tests
+- El usuario debería poder filtrar los productos por precio, de mayor a menor y vicecersa.
+- El usuario debería poder ver cuantos puntos tienen en su cuenta.
+- Debería haber una manera clara para el usuario de ver que productos puede comprar y cuales no.
+- El botón de comprar debería estar disponible en los productos que el usuario tiene suficientes puntos para comprar.
+- Un botón de "comprar ahora" debería mostrarse cuando el usuario interactúa con un producto que puede comprar.
+- Cuando el usuario no puede comprar un producto, debería ver cuantos puntos le faltan para poder comprarlo.
+- Un usuario no debería poder comprar un producto del cual no tiene suficientes puntos para comprar.
+- Cuando el usuario compra, la cantidad de puntos debe ser deducida automaticamente de los puntos disponibles.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Funcionalidades adicionales
 
-## Running end-to-end tests
+- El usuario puede agregar puntos a su cuenta.
+- El usuario puede ver los ultimos productos canjeados.
+- El usuario puede ver un raking de canjes por categoria.
+- El paginador utiliza url parameters.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Instalación
 
-## Further help
+```sh
+$ git clone https://github.com/pabcha/aerolab-challenge.git
+$ cd aerolab-challenge
+$ npm install
+$ ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+En el navegador ir a http://localhost:4200
