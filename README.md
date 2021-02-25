@@ -5,21 +5,7 @@ Aerolab propone una Interfaz Gráfica inicial que esta sujeta a cualquier mejora
 
 Mas información [aqui](https://aerolab.co/coding-challenge-instructions?utm_campaign=Coding%20Challenge).
 
-## Stack tecnológico
-
-- [Node 14.15.0][node]
-- [NPM 6.14.5][node]
-- [Angular 11.1][angular]
-- [Angular CLI][cli]
-- UI modules:
-  - [ng-zorro][ng-zorro] UI component: `tooltip`, `modal`, `select`, `icon` and more.
-  - [ngx-chartjs]
-
-[cli]: https://cli.angular.io/
-[angular]: https://angular.io/
-[ng-zorro]: https://ng.ant.design/docs/introduce/en
-[node]: https://nodejs.org/
-[ngx-chartjs]: https://github.com/scttcper/ngx-chartjs
+![Grilla de productos](https://i.imgur.com/xQPPPsn.png)
 
 ## Funcionalidad (desafío)
 
@@ -40,6 +26,41 @@ El usuario tiene una cantidad definida de puntos y cada producto vale una cantid
 - El usuario puede ver los ultimos productos canjeados.
 - El usuario puede ver un raking de canjes por categoria.
 - El paginador utiliza url parameters.
+
+### Demo proceso de compra
+
+![Usuario puede comprar](https://i.imgur.com/fnstoJi.gif)
+
+### Demo proceso para agregar puntos en la cuenta
+
+![Agregar puntos a la cuenta](https://i.imgur.com/UXDqkb4.gif)
+
+### Catálogo de productos
+
+Los usuarios no pueden comprar si no tienen los puntos suficientes. Se motiva al usuario a realizar la operación para agregar puntos sino cuenta con la cantidad requerida.
+![Catalogo de productos](https://i.imgur.com/bIgXB7y.png)
+
+## Stack tecnológico
+
+- [Node 14.15.0][node]
+- [NPM 6.14.5][node]
+- [Angular 11.1][angular]
+- [Angular CLI][cli]
+- UI modules:
+  - [ng-zorro][ng-zorro] UI component: `tooltip`, `modal`, `select`, `icon` and more.
+  - [ngx-chartjs]
+- [Netlify][netlify]
+
+[cli]: https://cli.angular.io/
+[angular]: https://angular.io/
+[ng-zorro]: https://ng.ant.design/docs/introduce/en
+[node]: https://nodejs.org/
+[ngx-chartjs]: https://github.com/scttcper/ngx-chartjs
+[netlify]: https://www.netlify.com/
+
+## LIVE DEMO
+
+Una demo de la aplicación -> [https://frosty-mcclintock-56c9d1.netlify.app/](https://frosty-mcclintock-56c9d1.netlify.app/)
 
 ## Instalación
 
