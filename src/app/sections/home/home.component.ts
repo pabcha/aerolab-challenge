@@ -1,8 +1,9 @@
-import { UserService } from './../../services/user.service';
-import { Component } from '@angular/core';
-import { ProductsService } from '../../services/products.service';
-import { Product } from '../../interfaces/Product';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Component } from '@angular/core';
+
+import { Product } from '../../interfaces/Product';
+import { ProductsService } from '../../services/products.service';
+import { UserService } from './../../services/user.service';
 import { SORT_BY } from './../../config/ui-options';
 
 const LIMIT = 16;

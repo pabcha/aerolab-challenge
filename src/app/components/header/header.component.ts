@@ -1,8 +1,9 @@
+import { Component } from '@angular/core';
+import { NzModalService } from 'ng-zorro-antd/modal';
+
 import { AddPointsModalComponent } from './../add-points-modal/add-points-modal.component';
 import { UserService } from './../../services/user.service';
-import { Component } from '@angular/core';
 import { User } from 'src/app/interfaces/User';
-import { NzModalService } from 'ng-zorro-antd/modal';
 
 @Component({
   selector: 'app-header',

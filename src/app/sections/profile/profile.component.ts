@@ -1,7 +1,8 @@
+import { Component } from "@angular/core";
+
 import { User } from 'src/app/interfaces/User';
 import { Redeem } from './../../interfaces/Redeem';
 import { UserService } from './../../services/user.service';
-import { Component } from "@angular/core";
 
 @Component({
   templateUrl: './profile.component.html',

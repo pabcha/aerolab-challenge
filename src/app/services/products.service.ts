@@ -1,9 +1,9 @@
-import { UserService } from './user.service';
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
+
 import { Product } from "../interfaces/Product";
+import { UserService } from './user.service';
 import { GET_PRODUCTS_URL, POST_REDEEM_URL, OPTIONS } from "../config/api-rest";
-import { Observable, BehaviorSubject, Subject } from "rxjs";
 
 @Injectable({ providedIn: 'root' })
 export class ProductsService {

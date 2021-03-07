@@ -1,8 +1,9 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable } from "rxjs";
+
 import { GET_USER_URL, OPTIONS, POST_POINTS_URL, GET_REDEEM_URL } from "../config/api-rest";
 import { User } from './../interfaces/User';
-import { BehaviorSubject, Observable } from "rxjs";
 import { Redeem } from "../interfaces/Redeem";
 
 const DEFAULT_STATE = {
