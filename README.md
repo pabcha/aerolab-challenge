@@ -60,4 +60,4 @@ $ ng serve
 
 En el navegador ir a http://localhost:4200
 
-[demo]: https://i.imgur.com/U8zRQ1K.gif
+[demo]: src/assets/images/addpoints-aerolab-challenge.gif
