@@ -8,6 +8,7 @@ Mas información [aqui](https://aerolab.co/coding-challenge-instructions?utm_cam
 ## Demo de la aplicación
 
 Para ver el live demo -> [https://frosty-mcclintock-56c9d1.netlify.app/](https://frosty-mcclintock-56c9d1.netlify.app/)
+
 ![Demo de la aplicación GIF][demo]
 
 ## Funcionalidades (desafío)
