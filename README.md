@@ -8,7 +8,7 @@ Mas información [aqui](https://aerolab.co/coding-challenge-instructions?utm_cam
 ## Demo de la aplicación
 
 Para ver el live demo -> [https://frosty-mcclintock-56c9d1.netlify.app/](https://frosty-mcclintock-56c9d1.netlify.app/)
-![Demo de la aplicación GIF](https://i.imgur.com/U8zRQ1K.gif)
+![Demo de la aplicación GIF][demo]
 
 ## Funcionalidades (desafío)
 
@@ -59,3 +59,5 @@ $ ng serve
 ```
 
 En el navegador ir a http://localhost:4200
+
+[demo]: https://i.imgur.com/U8zRQ1K.gif
