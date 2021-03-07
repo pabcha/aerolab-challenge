@@ -5,9 +5,12 @@ Aerolab propone una Interfaz Gráfica inicial que esta sujeta a cualquier mejora
 
 Mas información [aqui](https://aerolab.co/coding-challenge-instructions?utm_campaign=Coding%20Challenge).
 
-![Grilla de productos](https://i.imgur.com/xQPPPsn.png)
+## Demo de la aplicación
 
-## Funcionalidad (desafío)
+Para ver el live demo -> [https://frosty-mcclintock-56c9d1.netlify.app/](https://frosty-mcclintock-56c9d1.netlify.app/)
+![Demo de la aplicación GIF](https://i.imgur.com/U8zRQ1K.gif)
+
+## Funcionalidades (desafío)
 
 El usuario tiene una cantidad definida de puntos y cada producto vale una cantidad de puntos especifica.
 
@@ -26,19 +29,7 @@ El usuario tiene una cantidad definida de puntos y cada producto vale una cantid
 - El usuario puede ver los ultimos productos canjeados.
 - El usuario puede ver un raking de canjes por categoria.
 - El paginador utiliza url parameters.
-
-### Demo proceso de compra
-
-![Usuario puede comprar](https://i.imgur.com/fnstoJi.gif)
-
-### Demo proceso para agregar puntos en la cuenta
-
-![Agregar puntos a la cuenta](https://i.imgur.com/UXDqkb4.gif)
-
-### Catálogo de productos
-
-Los usuarios no pueden comprar si no tienen los puntos suficientes. Se motiva al usuario a realizar la operación para agregar puntos sino cuenta con la cantidad requerida.
-![Catalogo de productos](https://i.imgur.com/bIgXB7y.png)
+- Los usuarios no pueden comprar si no tienen los puntos suficientes. Se motiva al usuario a realizar la operación para agregar puntos sino cuenta con la cantidad requerida.
 
 ## Stack tecnológico
 
@@ -57,10 +48,6 @@ Los usuarios no pueden comprar si no tienen los puntos suficientes. Se motiva al
 [node]: https://nodejs.org/
 [ngx-chartjs]: https://github.com/scttcper/ngx-chartjs
 [netlify]: https://www.netlify.com/
-
-## LIVE DEMO
-
-Una demo de la aplicación -> [https://frosty-mcclintock-56c9d1.netlify.app/](https://frosty-mcclintock-56c9d1.netlify.app/)
 
 ## Instalación
 
